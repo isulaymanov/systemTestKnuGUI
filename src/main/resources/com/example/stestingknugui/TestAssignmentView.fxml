@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.stestingknugui.controller.TestAssignmentController">
+    <SplitPane orientation="HORIZONTAL">
+        <ListView fx:id="testsListView" prefWidth="200" />
+        <VBox fx:id="groupsVBox" spacing="10" prefWidth="400">
+            <Label text="Группы:" style="-fx-font-size: 14px;" />
+        </VBox>
+    </SplitPane>
+    <Button fx:id="assignTestButton" text="Назначить тест" layoutX="10" layoutY="350" />
+</AnchorPane>

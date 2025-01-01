@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!--        <?xml version="1.0" encoding="UTF-8"?>-->
+<!--        <?import java.lang.*?>-->
+<!--        <?import java.util.*?>-->
+<!--        <?import javafx.scene.*?>-->
+<!--        <?import javafx.scene.control.*?>-->
+<!--        <?import javafx.scene.layout.*?>-->
+<!--<AnchorPane xmlns="http://javafx.com/javafx"-->
+<!--            xmlns:fx="http://javafx.com/fxml"-->
+<!--            fx:controller="com.example.stestingknugui.controller.TestCreationController"-->
+<!--            prefHeight="400.0" prefWidth="600.0">-->
+<!--<children>-->
+<!--    <VBox spacing="10" layoutX="20" layoutY="20">-->
+<!--        <Label text="Создание теста"/>-->
+<!--        <TextField fx:id="testNameField" promptText="Название теста"/>-->
+<!--        <TextField fx:id="testDescriptionField" promptText="Описание теста"/>-->
+<!--        <DatePicker fx:id="startDatePicker" promptText="Дата начала"/>-->
+<!--        <DatePicker fx:id="endDatePicker" promptText="Дата окончания"/>-->
+<!--        <Button text="Создать тест" onAction="#createTest"/>-->
+<!--    </VBox>-->
+<!--</children>-->
+<!--</AnchorPane>-->
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #F2F4F6;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stestingknugui.controller.TestCreationController">
+
+    <children>
+      <AnchorPane layoutY="61.0" prefHeight="638.0" prefWidth="900.0" style="-fx-background-color: #F2F4F6;">
+         <children>
+            <Label layoutX="372.0" layoutY="83.0" text="Новый тест">
+               <font>
+                  <Font name="Arial Bold" size="27.0" />
+               </font>
+            </Label>
+               <TextField fx:id="testNameField" layoutX="257.0" layoutY="137.0" prefHeight="46.0" prefWidth="386.0" promptText="  Название теста" style="-fx-background-color: transparent; -fx-border-color: #545D69; -fx-border-width: 1px; -fx-border-radius: 5px;" />
+               <TextField fx:id="testDescriptionField" layoutX="257.0" layoutY="201.0" prefHeight="46.0" prefWidth="386.0" promptText="Описание теста" style="-fx-background-color: transperent; -fx-border-color: #545D69; -fx-border-width: 1px; -fx-border-radius: 5px;" />
+               <DatePicker fx:id="startDatePicker" layoutX="257.0" layoutY="263.0" prefHeight="46.0" prefWidth="386.0" promptText="Дата начала" style="-fx-background-color: transperent; -fx-border-color: #545D69; -fx-border-width: 1px; -fx-border-radius: 5px;" />
+               <DatePicker fx:id="endDatePicker" layoutX="257.0" layoutY="326.0" prefHeight="46.0" prefWidth="386.0" promptText="Дата окончания" style="-fx-background-color: trasperent; -fx-border-color: #545D69; -fx-border-width: 1px; -fx-border-radius: 5px;" />
+               <Button layoutX="353.0" layoutY="410.0" onAction="#createTest" prefHeight="38.0" prefWidth="193.0" style="-fx-background-color: #0bab00;" text="Добавить вопросы " textFill="WHITE" />
+            <Label layoutX="28.0" layoutY="25.0" text="Создание теста">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" layoutY="-59.0" prefHeight="118.0" prefWidth="901.0" style="-fx-background-color: linear-gradient(to right, #439DFF, #6052FF); -fx-background-radius: 25px;">
+         <children>
+            <Label layoutX="64.0" layoutY="80.0" text="Создание теста" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="44.0" layoutX="14.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Group.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

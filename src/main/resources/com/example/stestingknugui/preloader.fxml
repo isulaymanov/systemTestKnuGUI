@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+
+<!--<StackPane alignment="center" maxHeight="528.0" maxWidth="679.0" prefHeight="528.0" prefWidth="679.0" style="-fx-background-color: #5D5FEF; -fx-background-radius: 10; -fx-padding: 20;" stylesheets="@../../../preloader.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">-->
+<!--    <ImageView fitHeight="63.0" fitWidth="91.0" preserveRatio="true">-->
+<!--        <image>-->
+<!--            <Image url="@images/Group.png" />-->
+<!--        </image>-->
+<!--    </ImageView>-->
+<!--   <Label text="Label" />-->
+<!--</StackPane>-->
+<!--<StackPane alignment="center" maxHeight="528.0" maxWidth="679.0" prefHeight="528.0" prefWidth="679.0" style="-fx-background-color: #7A5AF8; -fx-background-radius: 10; -fx-padding: 20;" stylesheets="@../../../preloader.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">-->
+<!--    &lt;!&ndash; Изображение в центре &ndash;&gt;-->
+<!--    <ImageView fitHeight="114.0" fitWidth="163.0" preserveRatio="true">-->
+<!--        <image>-->
+<!--            <Image url="@images/Group.png" />-->
+<!--        </image>-->
+<!--    </ImageView>-->
+<!--    &lt;!&ndash; Текст внизу &ndash;&gt;-->
+<!--    <Label style="-fx-font-size: 16px; -fx-text-fill: white;" text="Система тестирования" StackPane.alignment="BOTTOM_CENTER" />-->
+<!--</StackPane>-->
+
+<StackPane alignment="center" maxHeight="528.0" maxWidth="679.0" prefHeight="528.0" prefWidth="679.0" style="-fx-background: linear-gradient(to right, #439DFF, #6052FF); -fx-background-radius: 10; -fx-padding: 20;" stylesheets="@../../../preloader.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+
+
+    <Label style="-fx-font-size: 16px; -fx-text-fill: white;" text="Система тестирования" StackPane.alignment="BOTTOM_CENTER" />
+   <ImageView fitHeight="245.0" fitWidth="366.0" preserveRatio="true">
+      <image>
+         <Image url="@images/logo_gorup.png" />
+      </image>
+   </ImageView>
+</StackPane>

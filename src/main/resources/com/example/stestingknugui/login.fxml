@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stestingknugui.controller.LoginController">
+    <children>
+        <AnchorPane layoutY="58.0" prefHeight="643.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Label layoutX="356.0" layoutY="150.0" prefHeight="79.0" prefWidth="87.0" text="Вход">
+                    <font>
+                        <Font name="Arial Bold" size="33.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="usernameField" layoutX="264.0" layoutY="230.0" prefHeight="42.0" prefWidth="290.0" promptText="Логин" style="-fx-background-color: transperent; -fx-border-radius: 5px; -fx-border-color: #545D69; -fx-border-width: 1px;" AnchorPane.bottomAnchor="371.59999999999997" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="245.5999999999999" AnchorPane.topAnchor="230.0">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="passwordField" layoutX="263.0" layoutY="291.0" prefHeight="42.0" prefWidth="290.0" promptText="Пароль" style="-fx-background-color: transperent; -fx-border-radius: 5px; -fx-border-color: #545D69; -fx-border-width: 1px;" />
+                <Button fx:id="loginButton" layoutX="325.0" layoutY="351.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="167.0" style="-fx-background-color: #0066a6; -fx-border-radius: 10;" text="Войти" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+      <AnchorPane layoutY="-62.0" prefHeight="118.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to right, #439DFF, #6052FF); -fx-background-radius: 25px;">
+         <children>
+              <Label layoutX="64.0" layoutY="80.0" text="Система тестирования " textFill="WHITE">
+                  <font>
+                      <Font name="Arial" size="14.0" />
+                  </font>
+              </Label>
+            <ImageView fitHeight="28.0" fitWidth="44.0" layoutX="14.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Group.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

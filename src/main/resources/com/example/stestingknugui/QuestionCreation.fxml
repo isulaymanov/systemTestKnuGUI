@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<?import java.lang.*?>-->
+<!--<?import java.util.*?>-->
+<!--<?import javafx.scene.*?>-->
+<!--<?import javafx.scene.control.*?>-->
+<!--<?import javafx.scene.layout.*?>-->
+<!--<AnchorPane xmlns="http://javafx.com/javafx"-->
+<!--            xmlns:fx="http://javafx.com/fxml"-->
+<!--            fx:controller="com.example.stestingknugui.controller.QuestionCreationController"-->
+<!--            prefHeight="400.0" prefWidth="600.0">-->
+<!--    <children>-->
+<!--        <VBox spacing="10" layoutX="20" layoutY="20">-->
+<!--            <Label text="Добавление вопросов"/>-->
+<!--            <TextField fx:id="questionTextField" promptText="Текст вопроса"/>-->
+<!--            <GridPane hgap="10" vgap="10">-->
+<!--                <children>-->
+<!--                    <Label text="Ответ 1:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>-->
+<!--                    <TextField fx:id="answer1Field" GridPane.rowIndex="0" GridPane.columnIndex="1"/>-->
+<!--                    <CheckBox fx:id="isCorrect1CheckBox" text="Правильный" GridPane.rowIndex="0" GridPane.columnIndex="2"/>-->
+<!--                    <Label text="Ответ 2:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>-->
+<!--                    <TextField fx:id="answer2Field" GridPane.rowIndex="1" GridPane.columnIndex="1"/>-->
+<!--                    <CheckBox fx:id="isCorrect2CheckBox" text="Правильный" GridPane.rowIndex="1" GridPane.columnIndex="2"/>-->
+<!--                    <Label text="Ответ 3:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>-->
+<!--                    <TextField fx:id="answer3Field" GridPane.rowIndex="2" GridPane.columnIndex="1"/>-->
+<!--                    <CheckBox fx:id="isCorrect3CheckBox" text="Правильный" GridPane.rowIndex="2" GridPane.columnIndex="2"/>-->
+<!--                    <Label text="Ответ 4:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>-->
+<!--                    <TextField fx:id="answer4Field" GridPane.rowIndex="3" GridPane.columnIndex="1"/>-->
+<!--                    <CheckBox fx:id="isCorrect4CheckBox" text="Правильный" GridPane.rowIndex="3" GridPane.columnIndex="2"/>-->
+<!--                </children>-->
+<!--            </GridPane>-->
+<!--            <Button text="Добавить вопрос" onAction="#addQuestion"/>-->
+<!--            <Button fx:id="finishTest" text="Завершить" onAction="#finishTest"/>-->
+<!--        </VBox>-->
+<!--    </children>-->
+<!--</AnchorPane>-->
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #F2F4F6;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stestingknugui.controller.QuestionCreationController">
+
+    <children>
+      <AnchorPane layoutX="8.0" layoutY="48.0" prefHeight="652.0" prefWidth="900.0" style="-fx-background-color: #F2F4F6;">
+         <children>
+            <Label layoutX="21.0" layoutY="34.0" text="Добавление вопросов">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+               <TextField fx:id="questionTextField" layoutX="29.0" layoutY="75.0" prefHeight="90.0" prefWidth="714.0" promptText="Текст вопроса" style="-fx-background-color: transparent; -fx-border-color: #545D69; -fx-border-width: 1px; -fx-border-radius: 5px;" />
+                 <Label layoutX="33.0" layoutY="202.0" text="Ответ 1:" />
+                 <TextField fx:id="answer1Field" layoutX="87.0" layoutY="198.0" prefHeight="47.0" prefWidth="626.0" promptText="Текст ответа" style="-fx-background-color: transperent; -fx-border-color: #545D69; -fx-border-radius: 5px; -fx-border-width: 1px;" />
+                 <CheckBox fx:id="isCorrect1CheckBox" layoutX="720.0" layoutY="206.0" prefHeight="22.0" prefWidth="112.0" text="Правильный" />
+
+                       <Label layoutX="33.0" layoutY="263.0" text="Ответ 2:" />
+                 <TextField fx:id="answer2Field" layoutX="87.0" layoutY="263.0" prefHeight="47.0" prefWidth="626.0" promptText="Текст ответа" style="-fx-background-color: transperent; -fx-border-color: #545D69; -fx-border-radius: 5px; -fx-border-width: 1px;" />
+                 <CheckBox fx:id="isCorrect2CheckBox" layoutX="720.0" layoutY="272.0" text="Правильный" />
+
+                       <Label layoutX="33.0" layoutY="339.0" text="Ответ 3:" />
+                 <TextField fx:id="answer3Field" layoutX="87.0" layoutY="333.0" prefHeight="47.0" prefWidth="626.0" promptText="Текст ответа" style="-fx-background-color: transperent; -fx-border-color: #545D69; -fx-border-radius: 5px; -fx-border-width: 1px;" />
+                 <CheckBox fx:id="isCorrect3CheckBox" layoutX="720.0" layoutY="339.0" text="Правильный" />
+
+                       <Label layoutX="33.0" layoutY="409.0" text="Ответ 4:" />
+                 <TextField fx:id="answer4Field" layoutX="87.0" layoutY="405.0" prefHeight="47.0" prefWidth="626.0" promptText="Текст ответа" style="-fx-background-color: transperent; -fx-border-color: #545D69; -fx-border-radius: 5px; -fx-border-width: 1px;" />
+                 <CheckBox fx:id="isCorrect4CheckBox" layoutX="720.0" layoutY="409.0" text="Правильный" />
+               <Button layoutX="311.0" layoutY="546.0" onAction="#addQuestion" prefHeight="40.0" prefWidth="178.0" style="-fx-background-color: #0bab00;" text="Добавить вопрос" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+               <Button fx:id="finishTest" layoutX="534.0" layoutY="546.0" onAction="#finishTest" prefHeight="40.0" prefWidth="178.0" style="-fx-background-color: #b50c00;" text="Завершить" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="-60.0" prefHeight="118.0" prefWidth="908.0" style="-fx-background-color: linear-gradient(to right, #439DFF, #6052FF); -fx-background-radius: 25px;">
+         <children>
+            <Label layoutX="64.0" layoutY="80.0" text="Создание вопросов" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="44.0" layoutX="14.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Group.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

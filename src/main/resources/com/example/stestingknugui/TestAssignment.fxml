@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!--<AnchorPane xmlns="http://javafx.com/javafx"-->
+<!--            xmlns:fx="http://javafx.com/fxml"-->
+<!--            fx:controller="com.example.stestingknugui.controller.TestAssignmentController"-->
+<!--            prefHeight="400.0" prefWidth="600.0">-->
+<!--    <children>-->
+<!--        <ListView fx:id="testsListView" layoutX="20.0" layoutY="20.0" prefHeight="400.0" prefWidth="200.0" />-->
+<!--        <ListView fx:id="groupsListView" layoutX="240.0" layoutY="20.0" prefHeight="400.0" prefWidth="200.0" />-->
+<!--        <Button fx:id="assignTestButton" layoutX="150.0" layoutY="440.0" mnemonicParsing="false" text="Назначить тест" />-->
+<!--    </children>-->
+<!--</AnchorPane>-->
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stestingknugui.controller.TestAssignmentController">
+    <children>
+        <ListView fx:id="testsListView" layoutX="134.0" layoutY="128.0" prefHeight="443.0" prefWidth="294.0" />
+        <VBox fx:id="groupsVBox" layoutX="451.0" layoutY="128.0" prefHeight="443.0" prefWidth="294.0" spacing="10.0" />
+        <Button fx:id="assignTestButton" layoutX="369.0" layoutY="593.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #0066a6;" text="Назначить тест" textFill="WHITE" />
+      <AnchorPane layoutY="-60.0" prefHeight="118.0" prefWidth="901.0" style="-fx-background-color: linear-gradient(to right, #439DFF, #6052FF); -fx-background-radius: 25px;">
+         <children>
+            <Label layoutX="64.0" layoutY="80.0" text="Назначение теста" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="44.0" layoutX="14.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Group.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="59.0" layoutY="79.0" text="Назначение теста">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

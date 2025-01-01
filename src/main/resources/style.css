@@ -1,0 +1,28 @@
+/* Общий стиль для TabPane */
+.tab-pane {
+    -fx-background-color: #f4f4f4; /* Цвет заднего плана панели вкладок */
+}
+
+/* Зона заголовков вкладок */
+.tab-header-area {
+    -fx-background-color: #e0e0e0; /* Цвет фона заголовков вкладок */
+}
+
+/* Неактивная вкладка */
+.tab {
+    -fx-background-color: #dcdcdc; /* Цвет неактивной вкладки */
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 3px 0; /* Убираем рамки */
+}
+
+/* Активная вкладка */
+.tab:selected {
+    -fx-background-color: #ffffff; /* Цвет активной вкладки */
+    -fx-border-color: #0078d7; /* Синий цвет линии внизу */
+    -fx-border-width: 0 0 3px 0; /* Толщина линии снизу */
+}
+
+/* При наведении на вкладку */
+.tab:hover {
+    -fx-background-color: #e8e8e8; /* Цвет при наведении */
+}
