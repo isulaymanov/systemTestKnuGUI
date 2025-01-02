@@ -9,17 +9,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<!--<AnchorPane xmlns="http://javafx.com/javafx"-->
-<!--            xmlns:fx="http://javafx.com/fxml"-->
-<!--            fx:controller="com.example.stestingknugui.controller.TestAssignmentController"-->
-<!--            prefHeight="400.0" prefWidth="600.0">-->
-<!--    <children>-->
-<!--        <ListView fx:id="testsListView" layoutX="20.0" layoutY="20.0" prefHeight="400.0" prefWidth="200.0" />-->
-<!--        <ListView fx:id="groupsListView" layoutX="240.0" layoutY="20.0" prefHeight="400.0" prefWidth="200.0" />-->
-<!--        <Button fx:id="assignTestButton" layoutX="150.0" layoutY="440.0" mnemonicParsing="false" text="Назначить тест" />-->
-<!--    </children>-->
-<!--</AnchorPane>-->
-
 <AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stestingknugui.controller.TestAssignmentController">
     <children>
         <ListView fx:id="testsListView" layoutX="134.0" layoutY="128.0" prefHeight="443.0" prefWidth="294.0" />

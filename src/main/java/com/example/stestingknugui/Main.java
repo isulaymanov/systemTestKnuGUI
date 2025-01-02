@@ -6,36 +6,31 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-public class MainApp extends Application {
+public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // Создаем Stage для прелоадера
         Stage preloaderStage = new Stage();
-        preloaderStage.initStyle(StageStyle.UNDECORATED); // Убираем рамки и кнопки
+        preloaderStage.initStyle(StageStyle.UNDECORATED);
 
-        // Загружаем FXML для прелоадера
         FXMLLoader preloaderLoader = new FXMLLoader(getClass().getResource("preloader.fxml"));
         Scene preloaderScene = new Scene(preloaderLoader.load());
         preloaderStage.setScene(preloaderScene);
 
-        // Устанавливаем прозрачный фон для прелоадера
         preloaderStage.initStyle(StageStyle.TRANSPARENT);
         preloaderScene.setFill(null);
 
         preloaderStage.show();
 
-        // Имитация задержки прелоадера (3-5 секунд)
         new Thread(() -> {
             try {
-                Thread.sleep(5000); // Задержка 4 секунды
+                Thread.sleep(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
 
-            // После задержки переключаем на главное окно
             javafx.application.Platform.runLater(() -> {
-                preloaderStage.close(); // Закрываем прелоадер
+                preloaderStage.close();
                 try {
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("start.fxml"));
                     Scene mainScene = new Scene(loader.load());
