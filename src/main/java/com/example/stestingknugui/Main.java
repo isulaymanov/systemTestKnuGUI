@@ -3,6 +3,7 @@ package com.example.stestingknugui;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -19,6 +20,16 @@ public class Main extends Application {
 
         preloaderStage.initStyle(StageStyle.TRANSPARENT);
         preloaderScene.setFill(null);
+
+        // Получаем размеры экрана с помощью Screen
+        javafx.geometry.Rectangle2D screenBounds = Screen.getPrimary().getBounds();
+
+        // Устанавливаем обработчик, который сработает после того, как окно отобразится
+        preloaderStage.setOnShown(event -> {
+            // Центрируем окно
+            preloaderStage.setX((screenBounds.getWidth() - preloaderStage.getWidth()) / 2);
+            preloaderStage.setY((screenBounds.getHeight() - preloaderStage.getHeight()) / 2);
+        });
 
         preloaderStage.show();
 
