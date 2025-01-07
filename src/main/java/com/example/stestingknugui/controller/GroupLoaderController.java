@@ -1,6 +1,7 @@
 package com.example.stestingknugui.controller;
 import com.example.stestingknugui.service.GroupService;
 import com.example.stestingknugui.util.DialogGroup;
+import com.example.stestingknugui.util.WindowCenterer;
 import javafx.scene.Parent;
 import com.example.stestingknugui.model.Group;
 import com.example.stestingknugui.service.LoadGroupsService;
@@ -74,6 +75,8 @@ public class GroupLoaderController {
             Stage stage = new Stage();
             stage.setTitle("Тесты группы");
             stage.setScene(new Scene(root));
+            // Центрируем окно
+            WindowCenterer.centerOnScreen(stage);
             stage.show();
 
         } catch (Exception e) {

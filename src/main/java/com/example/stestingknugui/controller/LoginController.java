@@ -1,6 +1,8 @@
 package com.example.stestingknugui.controller;
 
 import com.example.stestingknugui.service.LoginService;
+import com.example.stestingknugui.util.WindowCenterer;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -10,6 +12,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 public class LoginController {
@@ -61,13 +64,13 @@ public class LoginController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/stestingknugui/dashboard.fxml"));
             Parent root = loader.load();
-
             PanelController controller = loader.getController();
             controller.setJwtToken(jwtToken);
-
             Stage stage = new Stage();
             stage.setTitle("Панель");
             stage.setScene(new Scene(root));
+            // Центрируем окно
+            WindowCenterer.centerOnScreen(stage);
             stage.show();
 
             ((Stage) loginButton.getScene().getWindow()).close();

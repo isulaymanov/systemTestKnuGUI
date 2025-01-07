@@ -1,5 +1,6 @@
 package com.example.stestingknugui.controller;
 
+import com.example.stestingknugui.util.WindowCenterer;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -69,6 +70,8 @@ public class StudentDataViewController {
 
             Stage stage = (Stage) startTestButton.getScene().getWindow();
             stage.setScene(new Scene(root));
+            // Центрируем окно
+            WindowCenterer.centerOnScreen(stage);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -2,6 +2,7 @@ package com.example.stestingknugui.controller;
 
 import com.example.stestingknugui.model.TestResult;
 import com.example.stestingknugui.service.LoadResultsService;
+import com.example.stestingknugui.util.WindowCenterer;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -72,6 +73,8 @@ public class ResultWindowController {
             // Создаем сцену и показываем окно
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            // Центрируем окно
+            WindowCenterer.centerOnScreen(stage);
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();  // Или можно использовать logging

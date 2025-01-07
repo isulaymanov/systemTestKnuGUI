@@ -1,5 +1,6 @@
 package com.example.stestingknugui;
 
+import com.example.stestingknugui.util.WindowCenterer;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -13,6 +14,8 @@ public class StartController {
         Scene scene = new Scene(loader.load());
         stage.setTitle("Авторизация студента");
         stage.setScene(scene);
+        // Центрируем окно
+        WindowCenterer.centerOnScreen(stage);
         stage.show();
     }
 
@@ -23,6 +26,8 @@ public class StartController {
         Scene scene = new Scene(loader.load());
         stage.setTitle("Список групп");
         stage.setScene(scene);
+        // Центрируем окно
+        WindowCenterer.centerOnScreen(stage);
         stage.show();
     }
 
@@ -33,6 +38,8 @@ public class StartController {
         Scene scene = new Scene(loader.load());
         stage.setTitle("Регистрация");
         stage.setScene(scene);
+        // Центрируем окно
+        WindowCenterer.centerOnScreen(stage);
         stage.show();
     }
 

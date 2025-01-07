@@ -4,6 +4,7 @@ import com.example.stestingknugui.service.GroupService;
 import com.example.stestingknugui.service.LoadCurrentUser;
 import com.example.stestingknugui.util.DialogGroup;
 import com.example.stestingknugui.util.DialogHelper;
+import com.example.stestingknugui.util.WindowCenterer;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -75,6 +76,8 @@ public class PanelController {
             Stage stage = new Stage();
             stage.setTitle("Тест");
             stage.setScene(new Scene(root));
+            // Центрируем окно
+            WindowCenterer.centerOnScreen(stage);
             stage.show();
 
             ((Stage) createTestButton.getScene().getWindow()).close();
@@ -95,6 +98,8 @@ public class PanelController {
             Stage stage = new Stage();
             stage.setTitle("Назначить тест");
             stage.setScene(new Scene(root));
+            // Центрируем окно
+            WindowCenterer.centerOnScreen(stage);
             stage.show();
         } catch (Exception e) {
             e.printStackTrace();

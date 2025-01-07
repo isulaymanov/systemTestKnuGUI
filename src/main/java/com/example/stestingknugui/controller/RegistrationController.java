@@ -1,5 +1,6 @@
 package com.example.stestingknugui.controller;
 
+import com.example.stestingknugui.util.WindowCenterer;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -125,6 +126,8 @@ public class RegistrationController {
         Scene scene = new Scene(loader.load());
         loginStage.setTitle("Вход");
         loginStage.setScene(scene);
+        // Центрируем окно
+        WindowCenterer.centerOnScreen(loginStage);
         loginStage.show();
     }
 

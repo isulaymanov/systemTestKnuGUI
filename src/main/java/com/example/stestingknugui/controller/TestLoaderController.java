@@ -3,6 +3,7 @@ import com.example.stestingknugui.service.LoadTestsQuestionAllService;
 //import com.example.stestingknugui.util.HttpUtils;
 import com.example.stestingknugui.service.TestUpdatedService;
 import com.example.stestingknugui.util.DialogTest;
+import com.example.stestingknugui.util.WindowCenterer;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -77,6 +78,8 @@ public class TestLoaderController {
             Stage stage = new Stage();
             stage.setTitle("Вопросы и ответы");
             stage.setScene(new Scene(root));
+            // Центрируем окно
+            WindowCenterer.centerOnScreen(stage);
             stage.show();
         } catch (Exception e) {
             e.printStackTrace();

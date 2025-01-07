@@ -1,12 +1,12 @@
 package com.example.stestingknugui;
 
+import com.example.stestingknugui.util.WindowCenterer;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-
+import javafx.scene.Parent;
 public class Main extends Application {
 
     @Override
@@ -21,15 +21,8 @@ public class Main extends Application {
         preloaderStage.initStyle(StageStyle.TRANSPARENT);
         preloaderScene.setFill(null);
 
-        // Получаем размеры экрана с помощью Screen
-        javafx.geometry.Rectangle2D screenBounds = Screen.getPrimary().getBounds();
-
-        // Устанавливаем обработчик, который сработает после того, как окно отобразится
-        preloaderStage.setOnShown(event -> {
-            // Центрируем окно
-            preloaderStage.setX((screenBounds.getWidth() - preloaderStage.getWidth()) / 2);
-            preloaderStage.setY((screenBounds.getHeight() - preloaderStage.getHeight()) / 2);
-        });
+        // Центрируем окно
+        WindowCenterer.centerOnScreen(preloaderStage);
 
         preloaderStage.show();
 
@@ -47,6 +40,8 @@ public class Main extends Application {
                     Scene mainScene = new Scene(loader.load());
                     primaryStage.setTitle("Система авторизации");
                     primaryStage.setScene(mainScene);
+                    // Центрируем окно
+                    WindowCenterer.centerOnScreen(primaryStage);
                     primaryStage.show();
                 } catch (Exception e) {
                     e.printStackTrace();

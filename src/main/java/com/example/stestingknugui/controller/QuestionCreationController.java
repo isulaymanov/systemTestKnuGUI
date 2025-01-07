@@ -2,6 +2,7 @@ package com.example.stestingknugui.controller;
 
 import com.example.stestingknugui.service.CreateAnswerOptionService;
 import com.example.stestingknugui.service.CreateQuestionService;
+import com.example.stestingknugui.util.WindowCenterer;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -63,6 +64,8 @@ public class QuestionCreationController {
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.setTitle("Создание вопросов");
+            // Центрируем окно
+            WindowCenterer.centerOnScreen(stage);
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
@@ -123,6 +126,8 @@ public class QuestionCreationController {
             Stage stage = new Stage();
             stage.setTitle("Панель");
             stage.setScene(new Scene(root));
+            // Центрируем окно
+            WindowCenterer.centerOnScreen(stage);
             stage.show();
 
             ((Stage) finishTest.getScene().getWindow()).close();

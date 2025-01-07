@@ -1,5 +1,6 @@
 package com.example.stestingknugui.controller;
 
+import com.example.stestingknugui.util.WindowCenterer;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -178,6 +179,8 @@ public class  StudentTestPassingViewController {
 
             Stage stage = (Stage) answersContainer.getScene().getWindow();
             stage.setScene(new Scene(root));
+            // Центрируем окно
+            WindowCenterer.centerOnScreen(stage);
             stage.show();
             //System.out.println("Сцена обновлена!");
         } catch (Exception e) {
