@@ -31,7 +31,9 @@ public class GroupLoaderController {
 
         gruopVBox.getChildren().clear();
         for (Group group : groups) {
-            Label label = new Label("ID: " + group.getId() + ", Name: " + group.getName());
+            //
+            //Label label = new Label("ID: " + group.getId() + ", Name: " + group.getName());
+            Label label = new Label(group.getName());
             label.setStyle("-fx-font-size: 12px; -fx-padding: 5px;");
 
 
@@ -49,6 +51,7 @@ public class GroupLoaderController {
                             Group updatedGroup = new Group(group.getId(), name);  // Новый объект с обновленным именем
 
                             label.setText("ID: " + updatedGroup.getId() + ", Name: " + updatedGroup.getName());
+//                            label.setText(updatedGroup.getName());
 
                             loadGroups(jwtToken, gruopVBox); // Обновляем список групп
                         } else {
