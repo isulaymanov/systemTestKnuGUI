@@ -14,7 +14,7 @@ public class Main extends Application {
         Stage preloaderStage = new Stage();
         preloaderStage.initStyle(StageStyle.UNDECORATED);
 
-        FXMLLoader preloaderLoader = new FXMLLoader(getClass().getResource("preloader.fxml"));
+        FXMLLoader preloaderLoader = new FXMLLoader(getClass().getResource("test_preloader.fxml"));
         Scene preloaderScene = new Scene(preloaderLoader.load());
         preloaderStage.setScene(preloaderScene);
 
